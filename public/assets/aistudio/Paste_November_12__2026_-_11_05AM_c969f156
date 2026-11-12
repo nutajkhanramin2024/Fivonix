@@ -1,0 +1,1057 @@
+# PROJECT: FIVONIX — COMPLETE CORPORATE WEBSITE DEVELOPMENT
+
+## 1. PROJECT OVERVIEW
+
+Build a complete, production-quality, multi-page corporate website for a company named **FIVONIX**.
+
+Reference website:
+https://vvon.com.bd/
+
+Use the reference website to understand the business structure, information architecture, navigation, content depth, catalogue functionality, industry segmentation, and overall corporate presentation.
+
+The objective is to recreate a website with comparable depth and functionality while creating an original FIVONIX brand identity and visual design.
+
+This is NOT a basic startup landing page. It must look and function like a serious engineering, scientific equipment, renewable energy and technology solutions company.
+
+Company name: FIVONIX
+
+Brand tagline:
+Engineering Tomorrow. Enabling Progress.
+
+Primary market: Bangladesh.
+
+Target customers:
+- Universities and polytechnic institutes.
+- Hospitals and medical colleges.
+- Scientific research institutes.
+- Industrial and manufacturing companies.
+- Government organizations.
+- Corporate institutions.
+- Energy and infrastructure developers.
+
+## 2. BRAND GUIDELINES
+
+Use these exact colors throughout the website:
+
+Primary blue: rgb(1, 153, 247) / #0199F7
+
+Deep navy: #01134C
+
+White: #FFFFFF
+
+Color usage:
+- Primary blue for buttons, active navigation, links, icons and important highlights.
+- Deep navy for headings, footer backgrounds, navigation text and major sections.
+- White for primary page backgrounds, cards and content sections.
+
+Design direction:
+- Premium engineering corporation.
+- Professional and trustworthy.
+- Modern industrial technology.
+- Minimal, clean and structured.
+- Strong typography.
+- Large, high-quality technical photography.
+- Subtle gradients.
+- Soft shadows.
+- Consistent spacing.
+- Smooth transitions.
+- Carefully designed responsive layouts.
+
+Avoid:
+- Excessive gradients.
+- Neon colors.
+- Random decorative elements.
+- Cartoon illustrations.
+- Generic AI-generated-looking website sections.
+- Oversized rounded cards everywhere.
+- Unnecessary animations.
+- Inconsistent typography.
+
+Use a professional font such as Inter, Manrope or Plus Jakarta Sans.
+
+## 3. WEBSITE ARCHITECTURE
+
+Build the following pages and sections.
+
+### Main navigation
+
+1. Home
+2. Solutions
+3. Products
+4. Industries
+5. Brands
+6. Projects
+7. Insights
+8. About Us
+9. Contact
+
+Include a prominent blue button:
+
+REQUEST A QUOTE
+
+Navigation requirements:
+- Sticky header.
+- Dropdown navigation.
+- Mega menu for Solutions, Products and Industries.
+- Mobile hamburger navigation.
+- Smooth navigation.
+- Active page indicators.
+- Search functionality for products.
+- Consistent footer across all pages.
+
+## 4. HOMEPAGE — EXACT WEBSITE COPY
+
+### HERO SECTION
+
+Small introductory label:
+
+FIVONIX | ENGINEERING & TECHNOLOGY SOLUTIONS
+
+Main heading:
+
+Engineering the Future of Energy, Science and Healthcare.
+
+Supporting paragraph:
+
+FIVONIX delivers integrated engineering, scientific equipment and technology solutions for businesses, hospitals, universities and research institutions across Bangladesh. From renewable energy infrastructure to advanced laboratory systems and medical technologies, we help organizations turn complex technical requirements into practical solutions.
+
+Primary CTA:
+
+Explore Our Solutions
+
+Secondary CTA:
+
+Discuss Your Project
+
+Hero image direction:
+Use a professional photograph showing a combination of modern engineering infrastructure, solar installations, laboratory equipment or advanced medical technology.
+
+The hero must feel like an established international engineering corporation.
+
+### INTRODUCTION SECTION
+
+Heading:
+
+Engineering Solutions That Move Industries Forward.
+
+Paragraph:
+
+At FIVONIX, we bring engineering expertise, technology and application-focused solutions together to support the evolving needs of modern institutions and industries.
+
+Our approach goes beyond equipment supply. We focus on understanding each client's requirements, identifying suitable technologies and supporting projects through planning, procurement, installation, commissioning and after-sales service where agreed.
+
+From educational laboratories to industrial facilities and healthcare institutions, we aim to deliver reliable solutions that create long-term value.
+
+CTA: Discover FIVONIX
+
+### OUR ENGINEERING VERTICALS
+
+Section heading:
+
+Our Core Areas of Expertise
+
+Subtitle:
+
+Integrated engineering and technology solutions designed for specialized applications.
+
+Create five large professional service cards.
+
+CARD 1 — SOLAR & RENEWABLE ENERGY
+
+Title:
+Solar & Renewable Energy
+
+Description:
+Powering a sustainable future through intelligent energy solutions.
+
+Content:
+FIVONIX supports commercial, industrial and institutional renewable energy projects through solar engineering, procurement, installation and commissioning. We help organizations evaluate their energy requirements, site conditions and operational objectives to identify suitable solar solutions.
+
+Services:
+- Commercial solar systems.
+- Industrial rooftop solar.
+- Ground-mounted solar projects.
+- Solar power system design.
+- Energy storage integration.
+- Solar street lighting.
+- Energy assessment and consultancy.
+- Installation and commissioning.
+- Maintenance and technical support.
+
+CTA: Explore Solar Solutions
+
+CARD 2 — SCIENTIFIC & LABORATORY EQUIPMENT
+
+Title:
+Scientific & Laboratory Equipment
+
+Description:
+Equipping the next generation of scientific discovery.
+
+Content:
+We provide scientific instruments, laboratory equipment and complete laboratory solutions for universities, educational institutions, industrial laboratories and research organizations.
+
+Our solutions cover teaching laboratories, analytical instruments, materials testing, physics, chemistry, engineering and advanced scientific research.
+
+Services:
+- Educational laboratory equipment.
+- Mechanical engineering laboratories.
+- Electrical engineering laboratories.
+- Chemical engineering laboratories.
+- Physics laboratories.
+- Biomedical instrumentation.
+- Analytical instruments.
+- Laboratory furniture and infrastructure.
+- Laboratory installation and commissioning.
+- Technical training and support.
+
+CTA: Explore Laboratory Solutions
+
+CARD 3 — NUCLEAR MEDICINE & IMAGING
+
+Title:
+Nuclear Medicine & Imaging
+
+Description:
+Advanced imaging technologies for modern healthcare.
+
+Content:
+FIVONIX aims to support healthcare institutions and nuclear medicine departments with specialized imaging systems, quality assurance equipment, radiopharmacy infrastructure and related technologies.
+
+We focus on helping institutions identify appropriate configurations, technical requirements, installation needs and ongoing service considerations.
+
+Solutions:
+- Gamma camera systems.
+- SPECT imaging systems.
+- PET and PET/CT equipment.
+- Nuclear medicine workstations.
+- Imaging quality assurance equipment.
+- Radiopharmacy shielding.
+- Radiation protection equipment.
+- Irradiation systems.
+- Installation and commissioning support.
+- Equipment maintenance coordination.
+
+CTA: Explore Nuclear Medicine
+
+CARD 4 — MEDICAL EQUIPMENT
+
+Title:
+Medical Equipment
+
+Description:
+Technology and equipment supporting better healthcare infrastructure.
+
+Content:
+We support hospitals, medical colleges, diagnostic centres and healthcare institutions with medical equipment and specialized healthcare technologies.
+
+Our objective is to help healthcare providers identify equipment suited to their clinical applications, available facilities and operational requirements.
+
+Solutions:
+- Medical imaging equipment.
+- Digital radiography systems.
+- C-arm imaging systems.
+- Hospital furniture.
+- Operating theatre equipment.
+- Patient positioning systems.
+- Clinical laboratory equipment.
+- Medical microscopes.
+- Anatomy education systems.
+- Diagnostic and analytical instruments.
+
+CTA: Explore Medical Equipment
+
+CARD 5 — NANOTECHNOLOGY
+
+Title:
+Nanotechnology & Advanced Research
+
+Description:
+Enabling precision research and advanced materials science.
+
+Content:
+FIVONIX aims to support universities, research laboratories and advanced technology institutions with specialized instruments and technologies for nanotechnology, semiconductor research and materials characterization.
+
+Solutions:
+- Electron microscopy.
+- Atomic force microscopy.
+- Thin-film deposition.
+- Plasma etching.
+- Lithography systems.
+- Raman spectroscopy.
+- Optical characterization.
+- Thermal analysis.
+- Materials testing.
+- Cryogenic and magnetic measurement.
+- Cleanroom infrastructure.
+
+CTA: Explore Nanotechnology
+
+### WHO WE SERVE
+
+Heading:
+
+Solutions Designed Around Your Industry.
+
+Description:
+
+Every institution has different technical requirements. FIVONIX works to understand the application, operating environment and long-term objectives before recommending an appropriate solution.
+
+Create five industry cards.
+
+1. Universities & Polytechnics
+
+Copy:
+Build modern teaching and research facilities with specialized engineering equipment, laboratory systems and educational technologies.
+
+2. Hospitals & Medical Colleges
+
+Copy:
+Support healthcare infrastructure with medical equipment, advanced imaging technologies and specialized clinical solutions.
+
+3. Research Institutes
+
+Copy:
+Access advanced scientific instruments and technologies that support experimental research, materials analysis and scientific discovery.
+
+4. Industry & Manufacturing
+
+Copy:
+Improve industrial capabilities through renewable energy, laboratory technologies, process equipment and specialized engineering solutions.
+
+5. Government & Public Sector
+
+Copy:
+Explore technical equipment and engineering solutions designed around institutional requirements, procurement specifications and project objectives.
+
+CTA:
+Explore Industry Solutions
+
+### WHY CHOOSE FIVONIX
+
+Heading:
+
+More Than Equipment. A Complete Engineering Approach.
+
+Create six feature blocks.
+
+1. Application Engineering
+
+We work to understand the technical application and identify equipment configurations that align with the client's operational requirements.
+
+2. Technical Consultation
+
+We help organizations define specifications, evaluate technologies and make informed equipment selection decisions.
+
+3. Project Management
+
+We support project planning, coordination and execution across agreed project responsibilities.
+
+4. Equipment Supply
+
+We source and supply specialized engineering, scientific, laboratory and medical equipment according to project specifications.
+
+5. Installation & Commissioning
+
+We coordinate installation, testing and commissioning activities according to the agreed technical scope.
+
+6. After-Sales Support
+
+We provide or coordinate maintenance, troubleshooting, technical assistance and lifecycle support within agreed service arrangements.
+
+### OUR PROJECT APPROACH
+
+Heading:
+
+From Technical Requirements to Operational Solutions.
+
+Show a four-step horizontal process.
+
+01 — Understand
+
+We learn about your application, objectives, operational requirements and site conditions.
+
+02 — Evaluate
+
+We assess suitable technologies, specifications and possible configurations.
+
+03 — Deliver
+
+We coordinate equipment supply, project execution and installation according to the agreed scope.
+
+04 — Support
+
+We help coordinate commissioning, training, maintenance and technical support.
+
+### BRANDS & TECHNOLOGY PARTNERS
+
+Heading:
+
+Technology from Global Manufacturers.
+
+Description:
+
+Explore manufacturers and technology providers across scientific instrumentation, renewable energy, medical equipment, laboratory infrastructure and advanced research.
+
+Create a professional manufacturer logo grid with category filters and manufacturer profile pages.
+
+IMPORTANT: Only display manufacturer logos and authorized-partner claims when the relationship has been verified by FIVONIX.
+
+### PROJECTS & EXPERIENCE
+
+Heading:
+
+Engineering Solutions in Action.
+
+Description:
+
+Explore selected projects, installations and engineering activities demonstrating our work across renewable energy, scientific research, healthcare and industrial technology.
+
+Create a project portfolio with:
+- Project title.
+- Industry.
+- Location.
+- Project description.
+- Equipment or technology involved.
+- Project images.
+- Scope of work.
+- Project completion status.
+
+Do not invent project names, clients, photographs or results. Use clearly marked sample content until real project information is provided.
+
+### LATEST INSIGHTS
+
+Heading:
+
+Knowledge That Powers Better Decisions.
+
+Description:
+
+Explore technical articles, equipment selection guides, industry updates and practical resources to help your organization make informed engineering and technology decisions.
+
+Show three latest articles with:
+- Featured image.
+- Category.
+- Publication date.
+- Article title.
+- Short description.
+- Read More link.
+
+### FINAL CTA
+
+Heading:
+
+Have an Engineering Challenge? Let's Find the Right Solution.
+
+Description:
+
+Tell us about your project, technical requirements or equipment needs. Our team will help identify the next steps toward a suitable solution.
+
+Buttons:
+- Request a Quote
+- Contact Our Team
+
+## 5. PRODUCTS & CATALOGUE SYSTEM
+
+This is one of the most important parts of the website.
+
+Build a comprehensive searchable product catalogue.
+
+Reference functionality:
+The VVON website has extensive product categories, manufacturer directories and equipment selection guides. Recreate this depth of navigation for FIVONIX.
+
+### Catalogue homepage
+
+Heading:
+
+Explore Our Product Catalogue.
+
+Description:
+
+Discover scientific instruments, medical equipment, laboratory systems, renewable energy technologies and specialized engineering products from global manufacturers.
+
+Include:
+- Search bar.
+- Category filters.
+- Manufacturer filters.
+- Industry filters.
+- Application filters.
+- Product cards.
+- Pagination.
+- Sorting.
+- Product comparison.
+- Add to enquiry list.
+
+### Product categories
+
+SOLAR & ENERGY:
+- Solar panels.
+- Solar inverters.
+- Battery energy storage.
+- Solar monitoring systems.
+- Solar street lighting.
+- Solar testing equipment.
+- Energy management systems.
+
+SCIENTIFIC & LABORATORY:
+- Laboratory instruments.
+- Analytical instruments.
+- Electron microscopy.
+- Raman spectroscopy.
+- Optical instruments.
+- Mechanical testing instruments.
+- Thermal analysis.
+- Physics laboratory equipment.
+- Chemistry laboratory equipment.
+- Biotechnology equipment.
+- Laboratory furniture.
+- Laboratory safety systems.
+- Gas generators and detection.
+
+NUCLEAR MEDICINE:
+- Gamma cameras.
+- SPECT systems.
+- PET imaging.
+- Nuclear medicine workstations.
+- Imaging quality assurance phantoms.
+- Radiation shielding.
+- Radiopharmacy equipment.
+- Irradiators.
+
+MEDICAL EQUIPMENT:
+- Digital radiography.
+- C-arm systems.
+- Medical microscopes.
+- Hospital beds.
+- Operating theatre equipment.
+- Clinical laboratory equipment.
+- Patient positioning equipment.
+- Anatomy education systems.
+- Diagnostic instruments.
+
+NANOTECHNOLOGY:
+- Electron microscopes.
+- Atomic force microscopes.
+- Plasma etching systems.
+- Thin-film deposition systems.
+- Lithography equipment.
+- Raman spectroscopy.
+- Cryogenic systems.
+- Magnetic measurement.
+- Materials characterization.
+- Cleanroom infrastructure.
+
+### Product cards
+
+Every product card should display:
+- Product image.
+- Product name.
+- Manufacturer.
+- Category.
+- Short description.
+- View Details button.
+- Add to Enquiry button.
+
+Do not display made-up prices. Use:
+
+Price: Request a Quote.
+
+### Product detail page
+
+Each product must have:
+- Product title.
+- Manufacturer.
+- Product images.
+- Overview.
+- Key features.
+- Technical specifications.
+- Applications.
+- Available configurations.
+- Downloads and datasheets.
+- Related products.
+- Request a Quote button.
+
+### Enquiry basket
+
+Users must be able to add several products to one enquiry list.
+
+Enquiry form fields:
+- Full name.
+- Organization.
+- Job title.
+- Email address.
+- Phone number.
+- Country.
+- Project location.
+- Products requested.
+- Quantity.
+- Technical requirements.
+- Additional message.
+
+Button:
+Submit Enquiry.
+
+Display a clear success message after successful submission.
+
+## 6. MANUFACTURER DIRECTORY
+
+Create a dedicated Brands page.
+
+Heading:
+
+Global Technology. Local Engineering Support.
+
+Description:
+
+Explore technology manufacturers and equipment providers across our engineering divisions.
+
+Organize manufacturers into:
+- Renewable Energy.
+- Scientific Instruments.
+- Laboratory Equipment.
+- Nuclear Medicine.
+- Medical Equipment.
+- Nanotechnology.
+
+Each brand profile must include:
+- Manufacturer name.
+- Verified logo.
+- Manufacturer overview.
+- Product categories.
+- Available products.
+- Relevant applications.
+- Related technical resources.
+
+Do not claim official representation, exclusive distribution or authorization without documentation.
+
+## 7. INDUSTRY-SPECIFIC SOLUTION PAGES
+
+Build individual pages for:
+
+/industries/universities
+/industries/hospitals
+/industries/research-institutes
+/industries/manufacturing
+/industries/government
+
+Each page should include:
+- Hero section.
+- Industry-specific headline.
+- Industry-specific description.
+- Common technical challenges.
+- Relevant FIVONIX solutions.
+- Recommended product categories.
+- Project process.
+- Frequently asked questions.
+- Request consultation CTA.
+
+Make the content specific to each industry instead of repeating generic paragraphs.
+
+## 8. ABOUT US PAGE
+
+Hero heading:
+
+Engineering Knowledge. Technology. Progress.
+
+Description:
+
+FIVONIX is an engineering and technology solutions company focused on supporting institutions, industries and organizations with specialized equipment, technical consultation and project-oriented solutions.
+
+We believe that the right technology, supported by proper engineering and application knowledge, can help organizations improve their capabilities and achieve meaningful progress.
+
+### Our Mission
+
+To make advanced engineering technologies and specialized equipment more accessible through practical solutions, technical knowledge and dependable project support.
+
+### Our Vision
+
+To become a trusted engineering and technology solutions partner for institutions and industries in Bangladesh and beyond.
+
+### Our Values
+
+- Engineering Excellence.
+- Technical Integrity.
+- Customer Commitment.
+- Innovation.
+- Long-Term Partnerships.
+- Responsible Technology.
+
+### Leadership Team
+
+Create a professional leadership section.
+
+Fields:
+- Portrait.
+- Full name.
+- Position.
+- Short professional biography.
+- LinkedIn profile.
+
+Use placeholders until verified leadership details are supplied.
+
+## 9. PROJECTS PAGE
+
+Heading:
+
+Our Projects & Engineering Work.
+
+Description:
+
+Explore our engineering projects, equipment installations and technology solutions across different industries.
+
+Filters:
+- All Projects.
+- Solar & Energy.
+- Scientific & Laboratory.
+- Medical Equipment.
+- Nuclear Medicine.
+- Nanotechnology.
+
+Project detail pages should have:
+- Project overview.
+- Client name, only if approved for publication.
+- Location.
+- Project scope.
+- Technical requirements.
+- Solution delivered.
+- Equipment involved.
+- Project photographs.
+- Related projects.
+
+## 10. INSIGHTS & KNOWLEDGE CENTRE
+
+Create a full blog and technical knowledge centre.
+
+Categories:
+- Renewable Energy.
+- Laboratory Equipment.
+- Medical Technology.
+- Nuclear Medicine.
+- Nanotechnology.
+- Engineering Guides.
+- Industry News.
+
+Initial article topics:
+
+1. How to Choose the Right Solar System for an Industrial Facility.
+2. A Complete Guide to Setting Up a Modern Engineering Laboratory.
+3. Understanding Gamma Cameras and SPECT Imaging Systems.
+4. Essential Laboratory Equipment for University Research Departments.
+5. How to Select the Right Electron Microscope for Research.
+6. Understanding Laboratory Safety and Gas Detection Systems.
+7. Key Considerations Before Purchasing Medical Imaging Equipment.
+8. Planning a Modern Materials Research Laboratory.
+9. Solar Energy Opportunities for Commercial Buildings in Bangladesh.
+10. How to Prepare a Technical Specification Before Requesting an Equipment Quotation.
+
+Every article should have:
+- SEO title.
+- Meta description.
+- Featured image.
+- Introduction.
+- Table of contents.
+- Detailed content.
+- Relevant product links.
+- Related articles.
+- Contact CTA.
+
+Do not publish empty or automatically generated filler articles.
+
+## 11. SERVICES PAGE
+
+Heading:
+
+Engineering Support Throughout the Technology Lifecycle.
+
+Services:
+
+Application Engineering:
+Technical assessment and equipment selection based on real application requirements.
+
+Technical Consultation:
+Guidance on equipment specifications, configurations and project planning.
+
+Design & Engineering:
+Engineering design and technical planning for suitable applications.
+
+Project Management:
+Project coordination, planning and execution according to agreed responsibilities.
+
+Equipment Supply:
+Supply of scientific, laboratory, medical and engineering equipment.
+
+Installation & Commissioning:
+Technical installation and system commissioning support.
+
+Maintenance & Support:
+Maintenance planning, troubleshooting and after-sales assistance.
+
+Energy Consultancy:
+Renewable energy assessment and project consultancy.
+
+## 12. CONTACT PAGE
+
+Heading:
+
+Let's Discuss Your Next Project.
+
+Description:
+
+Whether you are planning a new laboratory, upgrading hospital infrastructure, evaluating renewable energy opportunities or looking for specialized engineering equipment, our team is ready to hear about your requirements.
+
+Contact information:
+Use verified FIVONIX phone number, email address and office address. Keep editable placeholders until supplied.
+
+Contact form:
+- Name.
+- Organization.
+- Email.
+- Phone.
+- Department or industry.
+- Subject.
+- Project location.
+- Message.
+
+Add:
+- Google Maps embed after the office location is confirmed.
+- Email contact.
+- Phone contact.
+- WhatsApp contact if available.
+- Business hours if confirmed.
+
+## 13. FAQ SECTION
+
+Create an expandable FAQ section.
+
+Questions and answers:
+
+Q: What does FIVONIX do?
+
+A: FIVONIX focuses on engineering, specialized equipment and technology solutions across renewable energy, scientific and laboratory equipment, nuclear medicine, medical equipment and advanced research technologies.
+
+Q: Who can work with FIVONIX?
+
+A: We aim to support universities, hospitals, research organizations, industrial companies, government institutions and other organizations with specialized technical requirements.
+
+Q: Can FIVONIX help select equipment?
+
+A: Yes. Share your application, technical requirements, expected usage and budget considerations. Our team can help identify suitable equipment categories and configurations.
+
+Q: How can I request a quotation?
+
+A: Browse our catalogue, select the required products and submit an enquiry with your organization and project details. You can also contact our team directly.
+
+Q: Does FIVONIX provide installation and commissioning?
+
+A: Installation and commissioning support can be discussed according to the equipment, project requirements and agreed scope of work.
+
+Q: Can I request multiple products in one enquiry?
+
+A: Yes. Add multiple products to your enquiry list and submit them together.
+
+Q: Does FIVONIX support projects outside Dhaka?
+
+A: Project support outside Dhaka can be discussed based on the site location, technical requirements and agreed scope.
+
+## 14. FOOTER
+
+Create a premium, multi-column corporate footer.
+
+Column 1:
+FIVONIX
+
+Engineering Tomorrow. Enabling Progress.
+
+FIVONIX delivers engineering, scientific equipment and technology solutions for institutions and industries.
+
+Column 2 — Solutions:
+- Solar & Renewable Energy.
+- Scientific & Laboratory Equipment.
+- Nuclear Medicine.
+- Medical Equipment.
+- Nanotechnology.
+
+Column 3 — Company:
+- About Us.
+- Projects.
+- Industries.
+- Brands.
+- Insights.
+- Contact.
+
+Column 4 — Resources:
+- Product Catalogue.
+- Buying Guides.
+- Technical Resources.
+- FAQs.
+- Request a Quote.
+
+Bottom footer:
+© 2026 FIVONIX. All Rights Reserved.
+
+Privacy Policy | Terms & Conditions
+
+## 15. FUNCTIONAL REQUIREMENTS
+
+Every interactive element must actually work.
+
+Implement:
+- Responsive navigation.
+- Mega menus.
+- Product search.
+- Product filters.
+- Manufacturer filters.
+- Product details.
+- Product comparison.
+- Enquiry basket.
+- Enquiry form submission.
+- Contact form submission.
+- Blog search.
+- Article categories.
+- Pagination.
+- FAQ accordion.
+- Newsletter subscription, if an email service is configured.
+- WhatsApp contact, if a verified number is supplied.
+- Back-to-top button.
+- Breadcrumb navigation.
+- Proper loading states.
+- Empty states.
+- Error handling.
+- Form validation.
+- Success notifications.
+
+Do not create decorative buttons that do nothing.
+
+## 16. TECHNICAL REQUIREMENTS
+
+Use the existing project stack if a working project already exists. Do not unnecessarily replace the architecture.
+
+If starting from scratch:
+- Next.js.
+- TypeScript.
+- Tailwind CSS.
+- Reusable components.
+- Lucide icons.
+- Supabase or another suitable database for dynamic content.
+- Secure server-side form processing.
+- Optimized image loading.
+
+Build a reusable architecture.
+
+Suggested components:
+- Header.
+- MegaMenu.
+- Hero.
+- SectionHeading.
+- SolutionCard.
+- IndustryCard.
+- ProductCard.
+- BrandCard.
+- ProjectCard.
+- ArticleCard.
+- ProductFilters.
+- EnquiryDrawer.
+- ContactForm.
+- FAQAccordion.
+- Footer.
+
+## 17. ADMIN / CMS REQUIREMENTS
+
+Create a protected admin dashboard if backend integration is available.
+
+Administrators should be able to:
+- Add/edit/delete products.
+- Manage product categories.
+- Manage manufacturers.
+- Upload product photographs.
+- Upload technical datasheets.
+- Manage enquiries.
+- Manage projects.
+- Publish/edit blog articles.
+- Manage website content.
+- Update contact information.
+
+Use secure authentication and role-based access.
+
+Never expose admin routes or database credentials publicly.
+
+## 18. SEO REQUIREMENTS
+
+Implement:
+- Unique page titles.
+- Meta descriptions.
+- Canonical URLs.
+- Open Graph metadata.
+- XML sitemap.
+- Robots.txt.
+- Semantic headings.
+- Image alt text.
+- Internal linking.
+- Organization schema.
+- Product schema where appropriate.
+- Article schema.
+- Breadcrumb schema.
+- Fast-loading pages.
+
+Optimize for search phrases such as:
+- Engineering solutions in Bangladesh.
+- Laboratory equipment supplier Bangladesh.
+- Solar EPC Bangladesh.
+- Medical equipment supplier Bangladesh.
+- Scientific instruments Bangladesh.
+- Nuclear medicine equipment Bangladesh.
+- Nanotechnology equipment Bangladesh.
+
+Do not keyword-stuff.
+
+## 19. RESPONSIVE DESIGN
+
+Desktop:
+Premium full-width corporate experience with generous spacing.
+
+Tablet:
+Adapt navigation and grids appropriately.
+
+Mobile:
+- Compact navigation.
+- Easy-to-read text.
+- Full-width buttons where appropriate.
+- Optimized product cards.
+- Proper image sizing.
+- Touch-friendly controls.
+- No horizontal overflow.
+
+Test common viewport sizes.
+
+## 20. FINAL QUALITY REQUIREMENTS
+
+Before completing the project:
+
+1. Review every page.
+2. Test every navigation link.
+3. Test all buttons.
+4. Test product searches and filters.
+5. Test enquiry basket.
+6. Test forms.
+7. Check responsive layouts.
+8. Check image loading.
+9. Check accessibility.
+10. Check page performance.
+11. Check SEO metadata.
+12. Fix console errors.
+13. Remove placeholder links and broken sections.
+14. Verify that no unconfirmed company credentials are presented as facts.
+
+The finished website must feel like a credible, established engineering corporation, not a generic template.
+
+IMPORTANT EXECUTION INSTRUCTION:
+
+Do not stop after generating the homepage.
+
+Build the complete website, including its internal pages, navigation, catalogue, product details, manufacturer directory, industry pages, project portfolio, insights, contact system and responsive footer.
+
+Work in logical phases, but continue until the complete implementation is finished.
+
+First inspect the existing repository, identify its framework and current implementation, and preserve any useful existing infrastructure.
+
+Deliver a fully functional, polished FIVONIX corporate website.
