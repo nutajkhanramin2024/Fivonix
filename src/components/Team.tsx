@@ -23,7 +23,7 @@ export const Team: React.FC = () => {
           {TEAM.map((member) => (
             <div 
               key={member.id}
-              className="bg-white border border-[#E2E8F0] rounded-[10px] overflow-hidden shadow-sm"
+              className="bg-white border border-[#E2E8F0] rounded-[10px] overflow-hidden "
             >
               <div className="relative h-56 overflow-hidden bg-slate-100">
                 <img 

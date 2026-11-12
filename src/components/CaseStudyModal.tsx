@@ -14,7 +14,7 @@ export const CaseStudyModal: React.FC<CaseStudyModalProps> = ({ item, onClose, o
   return (
     <div className="fixed inset-0 z-50 flex items-center justify-center p-4 bg-slate-950/85 backdrop-blur-md animate-fadeIn">
       <div 
-        className="relative w-full max-w-3xl max-h-[90vh] overflow-y-auto bg-slate-900 border border-blue-900/60 rounded-3xl p-6 sm:p-8 shadow-2xl space-y-6 text-left"
+        className="relative w-full max-w-3xl max-h-[90vh] overflow-y-auto bg-slate-900 border border-blue-900/60 rounded-3xl p-6 sm:p-8  space-y-6 text-left"
         onClick={(e) => e.stopPropagation()}
       >
         {/* Close Button */}
@@ -105,7 +105,7 @@ export const CaseStudyModal: React.FC<CaseStudyModalProps> = ({ item, onClose, o
               onClose();
               onOpenQuote();
             }}
-            className="px-6 py-2.5 text-xs font-bold text-white bg-blue-600 hover:bg-blue-500 rounded-xl shadow-lg shadow-blue-600/30 flex items-center gap-2 transition-all"
+            className="px-6 py-2.5 text-xs font-bold text-white bg-blue-600 hover:bg-blue-500 rounded-xl  shadow-blue-600/30 flex items-center gap-2 transition-all"
           >
             <span>Start a Similar Project</span>
             <ArrowRight className="w-4 h-4" />

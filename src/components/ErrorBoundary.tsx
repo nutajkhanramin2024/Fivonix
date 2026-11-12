@@ -27,7 +27,7 @@ export class ErrorBoundary extends Component<Props, State> {
     if (this.state.hasError) {
       return (
         <div className="min-h-screen bg-black text-white flex items-center justify-center p-6 text-center">
-          <div className="max-w-md space-y-4 p-8 rounded-2xl bg-[#050814] border border-cyan-400/30 shadow-2xl">
+          <div className="max-w-md space-y-4 p-8 rounded-2xl bg-[#050814] border border-cyan-400/30 ">
             <span className="text-xs font-mono font-bold text-[#0199F7] uppercase tracking-widest block">
               // RECOVERY CONSOLE
             </span>
@@ -42,7 +42,7 @@ export class ErrorBoundary extends Component<Props, State> {
                 this.setState({ hasError: false, error: null });
                 window.location.reload();
               }}
-              className="px-6 py-3 text-xs font-bold text-white bg-[#0199F7] hover:bg-blue-600 rounded-lg shadow-lg shadow-[#0199F7]/30 transition-all cursor-pointer"
+              className="px-6 py-3 text-xs font-bold text-white bg-[#0199F7] hover:bg-blue-600 rounded-lg /30 transition-all cursor-pointer"
             >
               Refresh Interface
             </button>

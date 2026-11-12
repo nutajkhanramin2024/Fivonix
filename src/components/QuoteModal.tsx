@@ -27,7 +27,7 @@ export const QuoteModal: React.FC<QuoteModalProps> = ({ isOpen, onClose }) => {
   return (
     <div className="fixed inset-0 z-50 flex items-center justify-center p-4 bg-black/85 backdrop-blur-sm animate-fadeIn">
       <div 
-        className="w-full max-w-xl bg-[#05070f] border border-white/15 rounded-2xl p-6 sm:p-8 shadow-2xl space-y-6 text-left relative text-slate-300"
+        className="w-full max-w-xl bg-[#05070f] border border-white/15 rounded-2xl p-6 sm:p-8  space-y-6 text-left relative text-slate-300"
         onClick={(e) => e.stopPropagation()}
       >
         <button

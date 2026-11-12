@@ -1,6 +1,8 @@
+import bgPng from "../assets/bg.png";
 import React from 'react';
 import { SOLUTIONS } from '../data/mockData';
 import { Check, ArrowRight } from 'lucide-react';
+import { MacWindowHeader } from './MacWindowHeader';
 
 interface SolutionsViewProps {
   onOpenQuote: () => void;
@@ -12,8 +14,19 @@ export const SolutionsView: React.FC<SolutionsViewProps> = ({ onOpenQuote, setCu
     <div className="py-16 bg-black min-h-screen space-y-16 text-slate-300">
       
       {/* Header */}
-      <div className="bg-black text-white py-16 border-b border-white/10">
-        <div className="max-w-[1200px] mx-auto px-4 sm:px-6 lg:px-8 space-y-4">
+      <div className="relative bg-black text-white py-20 lg:py-24 border-b border-white/10 overflow-hidden">
+        {/* User custom background art: bg.png */}
+        <div className="absolute inset-0 overflow-hidden pointer-events-none">
+          <img 
+            src={bgPng} 
+            alt="Page Background" 
+            className="w-full h-full object-cover object-center opacity-65 select-none"
+          />
+          <div className="absolute inset-0 bg-black/55" />
+          <div className="absolute inset-0 bg-gradient-to-t from-black via-transparent to-black" />
+        </div>
+
+        <div className="max-w-[1200px] mx-auto px-4 sm:px-6 lg:px-8 space-y-4 relative z-10">
           <span className="text-xs font-semibold text-[#0199F7] uppercase tracking-wider">Engineering Verticals</span>
           <h1 className="text-3xl sm:text-4xl lg:text-5xl font-black tracking-tight text-white">
             Integrated Engineering & Technology Solutions.
@@ -26,8 +39,10 @@ export const SolutionsView: React.FC<SolutionsViewProps> = ({ onOpenQuote, setCu
 
       <div className="max-w-[1200px] mx-auto px-4 sm:px-6 lg:px-8 space-y-16">
         {SOLUTIONS.map((sol, idx) => (
-          <div key={sol.id} className="bg-[#05070f] border border-white/10 rounded-2xl p-8 sm:p-10 shadow-2xl space-y-6">
-            <div className="flex flex-col lg:flex-row lg:items-center justify-between gap-6 pb-6 border-b border-white/10">
+          <div key={sol.id} className="bg-[#05070f] border border-white/10 rounded-2xl overflow-hidden space-y-0">
+            <MacWindowHeader title={`VERTICAL_0${idx + 1}`} />
+            <div className="p-8 sm:p-10 space-y-6">
+              <div className="flex flex-col lg:flex-row lg:items-center justify-between gap-6 pb-6 border-b border-white/10">
               <div className="space-y-2">
                 <span className="text-xs font-bold text-[#0199F7]">Vertical 0{idx + 1}</span>
                 <h2 className="text-2xl sm:text-3xl font-extrabold text-white">{sol.title}</h2>
@@ -35,7 +50,7 @@ export const SolutionsView: React.FC<SolutionsViewProps> = ({ onOpenQuote, setCu
               </div>
               <button
                 onClick={onOpenQuote}
-                className="px-6 py-3 text-xs font-bold text-white bg-[#0199F7] hover:bg-blue-600 rounded-lg shadow-lg shadow-[#0199F7]/30 transition-all shrink-0 cursor-pointer"
+                className="px-6 py-3 text-xs font-bold text-white bg-[#0199F7] hover:bg-blue-600 rounded-lg /30 transition-all shrink-0 cursor-pointer"
               >
                 Request Solution Proposal
               </button>
@@ -64,6 +79,7 @@ export const SolutionsView: React.FC<SolutionsViewProps> = ({ onOpenQuote, setCu
                 <ArrowRight className="w-4 h-4" />
               </button>
             </div>
+          </div>
           </div>
         ))}
       </div>

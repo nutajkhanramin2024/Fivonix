@@ -43,7 +43,7 @@ export const Services: React.FC<ServicesProps> = ({ onOpenContact }) => {
             <div 
               key={service.id}
               onClick={() => setSelectedService(service)}
-              className="bg-[#F6F8FB] border border-[#E2E8F0] rounded-[10px] p-6 hover:border-[#1D4ED8] hover:shadow-md transition-all cursor-pointer flex flex-col justify-between"
+              className="bg-[#F6F8FB] border border-[#E2E8F0] rounded-[10px] p-6 hover:border-[#1D4ED8] hover: transition-all cursor-pointer flex flex-col justify-between"
             >
               <div className="space-y-4">
                 <div className="w-10 h-10 rounded-lg bg-[#EAF1FB] flex items-center justify-center">
@@ -72,7 +72,7 @@ export const Services: React.FC<ServicesProps> = ({ onOpenContact }) => {
       {selectedService && (
         <div className="fixed inset-0 z-50 flex items-center justify-center p-4 bg-slate-900/60 backdrop-blur-sm">
           <div 
-            className="w-full max-w-xl bg-white border border-[#E2E8F0] rounded-[10px] p-6 sm:p-8 shadow-xl space-y-6 text-left relative"
+            className="w-full max-w-xl bg-white border border-[#E2E8F0] rounded-[10px] p-6 sm:p-8  space-y-6 text-left relative"
             onClick={(e) => e.stopPropagation()}
           >
             <button 

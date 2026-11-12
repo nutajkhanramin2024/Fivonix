@@ -1,7 +1,9 @@
+import bgPng from "../assets/bg.png";
 import React, { useState } from 'react';
 import { PROJECTS } from '../data/mockData';
 import { CheckCircle2, MapPin, Building, ArrowRight, X } from 'lucide-react';
 import { ProjectItem } from '../types';
+import { MacWindowHeader } from './MacWindowHeader';
 
 interface ProjectsViewProps {
   onOpenQuote: () => void;
@@ -13,8 +15,19 @@ export const ProjectsView: React.FC<ProjectsViewProps> = ({ onOpenQuote }) => {
   return (
     <div className="py-16 bg-black min-h-screen space-y-16 text-slate-300">
       
-      <div className="bg-black text-white py-16 border-b border-white/10">
-        <div className="max-w-[1200px] mx-auto px-4 sm:px-6 lg:px-8 space-y-4">
+      <div className="relative bg-black text-white py-20 lg:py-24 border-b border-white/10 overflow-hidden">
+        {/* User custom background art: bg.png */}
+        <div className="absolute inset-0 overflow-hidden pointer-events-none">
+          <img 
+            src={bgPng} 
+            alt="Page Background" 
+            className="w-full h-full object-cover object-center opacity-65 select-none"
+          />
+          <div className="absolute inset-0 bg-black/55" />
+          <div className="absolute inset-0 bg-gradient-to-t from-black via-transparent to-black" />
+        </div>
+
+        <div className="max-w-[1200px] mx-auto px-4 sm:px-6 lg:px-8 space-y-4 relative z-10">
           <span className="text-xs font-semibold text-[#0199F7] uppercase tracking-wider">Engineering Portfolio</span>
           <h1 className="text-3xl sm:text-4xl lg:text-5xl font-black tracking-tight text-white">
             Our Projects & Engineering Work.
@@ -31,8 +44,9 @@ export const ProjectsView: React.FC<ProjectsViewProps> = ({ onOpenQuote }) => {
             <div 
               key={proj.id}
               onClick={() => setActiveProject(proj)}
-              className="bg-[#05070f] border border-white/10 rounded-2xl overflow-hidden shadow-xl hover:border-[#0199F7] hover:shadow-2xl transition-all cursor-pointer flex flex-col justify-between group"
+              className="bg-[#05070f] border border-white/10 rounded-2xl overflow-hidden  hover:border-[#0199F7] hover: transition-all cursor-pointer flex flex-col justify-between group"
             >
+              <MacWindowHeader title={proj.industry} />
               <div className="h-52 bg-black overflow-hidden">
                 <img src={proj.image} alt={proj.title} className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" referrerPolicy="no-referrer" />
               </div>
@@ -61,7 +75,7 @@ export const ProjectsView: React.FC<ProjectsViewProps> = ({ onOpenQuote }) => {
       {activeProject && (
         <div className="fixed inset-0 z-50 flex items-center justify-center p-4 bg-black/85 backdrop-blur-sm animate-fadeIn">
           <div 
-            className="w-full max-w-2xl max-h-[90vh] overflow-y-auto bg-[#05070f] border border-white/15 rounded-2xl p-6 sm:p-8 shadow-2xl space-y-6 text-left relative text-slate-300"
+            className="w-full max-w-2xl max-h-[90vh] overflow-y-auto bg-[#05070f] border border-white/15 rounded-2xl p-6 sm:p-8  space-y-6 text-left relative text-slate-300"
             onClick={(e) => e.stopPropagation()}
           >
             <button
@@ -107,7 +121,7 @@ export const ProjectsView: React.FC<ProjectsViewProps> = ({ onOpenQuote }) => {
                   setActiveProject(null);
                   onOpenQuote();
                 }}
-                className="px-5 py-2.5 text-xs font-bold text-white bg-[#0199F7] hover:bg-blue-600 rounded-lg shadow-lg shadow-[#0199F7]/30 cursor-pointer"
+                className="px-5 py-2.5 text-xs font-bold text-white bg-[#0199F7] hover:bg-blue-600 rounded-lg /30 cursor-pointer"
               >
                 Discuss Similar Project
               </button>

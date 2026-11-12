@@ -44,7 +44,7 @@ export const WhyUs: React.FC = () => {
               desc: 'Continuous monitoring, maintenance, and technical support after deployment.'
             }
           ].map((item, idx) => (
-            <div key={idx} className="bg-white border border-[#E2E8F0] rounded-[10px] p-6 space-y-3 shadow-sm">
+            <div key={idx} className="bg-white border border-[#E2E8F0] rounded-[10px] p-6 space-y-3 ">
               <div className="w-10 h-10 rounded-lg bg-[#EAF1FB] flex items-center justify-center">
                 {item.icon}
               </div>

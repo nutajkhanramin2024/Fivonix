@@ -1,5 +1,6 @@
 import React from 'react';
 import { Mail, Phone, MapPin, ArrowRight } from 'lucide-react';
+import { CelestialHorizonGlow } from './CelestialHorizonGlow';
 
 interface FooterProps {
   setCurrentView: (view: string) => void;
@@ -7,8 +8,13 @@ interface FooterProps {
 
 export const Footer: React.FC<FooterProps> = ({ setCurrentView }) => {
   return (
-    <footer className="bg-black text-slate-400 pt-20 pb-12 border-t border-white/10">
-      <div className="max-w-[1200px] mx-auto px-4 sm:px-6 lg:px-8 space-y-16">
+    <footer className="relative bg-black text-slate-400 pt-20 pb-0 border-t border-white/10 overflow-hidden">
+      {/* Signature Soft Blue Ambient Glow at the Footer Section */}
+      <div className="absolute top-0 left-1/2 -translate-x-1/2 w-[1200px] max-w-full h-44 bg-gradient-to-b from-[#0199F7]/15 via-[#01134C]/20 to-transparent blur-[90px] pointer-events-none" />
+      <div className="absolute -bottom-28 -right-20 w-96 h-96 rounded-full bg-[#0199F7]/10 blur-[120px] pointer-events-none" />
+      <div className="absolute -bottom-28 -left-20 w-96 h-96 rounded-full bg-[#01134C]/25 blur-[120px] pointer-events-none" />
+
+      <div className="w-full max-w-[1400px] 2xl:max-w-[1536px] mx-auto px-6 sm:px-10 lg:px-14 xl:px-16 space-y-12 relative z-10">
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-10">
           
           {/* Column 1: Brand */}
@@ -88,6 +94,11 @@ export const Footer: React.FC<FooterProps> = ({ setCurrentView }) => {
             <a href="#" className="hover:text-white transition-colors">Privacy Policy</a>
             <a href="#" className="hover:text-white transition-colors">Terms & Conditions</a>
           </div>
+        </div>
+
+        {/* Planetary Horizon Glow at the ABSOLUTE BOTTOM of the Footer across ALL pages */}
+        <div className="pt-4 pb-0 relative overflow-hidden pointer-events-none">
+          <CelestialHorizonGlow className="-mb-8" />
         </div>
 
       </div>

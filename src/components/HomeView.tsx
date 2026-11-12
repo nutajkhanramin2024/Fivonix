@@ -3,9 +3,11 @@ import { ArrowRight, CheckCircle2, ChevronRight, ChevronDown, Compass, Shield, W
 import { ThreeHeroCenterpiece } from './ThreeHeroCenterpiece';
 import { InteractiveEngineeringVisualizer } from './InteractiveEngineeringVisualizer';
 import { CelestialHorizonGlow } from './CelestialHorizonGlow';
+import { MacWindowHeader, MacDots } from './MacWindowHeader';
 import { SOLUTIONS, PRODUCTS, PROJECTS, ARTICLES, FAQ_ITEMS } from '../data/mockData';
 import techRibbonBg from '../assets/technology_ribbon.jpg';
 import quantumOrbBg from '../assets/quantum_orb.jpg';
+import bgPng from '../assets/bg.png';
 
 interface HomeViewProps {
   setCurrentView: (view: string) => void;
@@ -144,7 +146,7 @@ export const HomeView: React.FC<HomeViewProps> = ({ setCurrentView, onOpenQuote 
       {/* =========================================================================
           HERO — UNFORGETTABLE 3D IMMERSIVE EXPERIENCE
           ========================================================================= */}
-      <section className="relative min-h-[90vh] lg:min-h-screen bg-black text-white flex flex-col justify-between overflow-hidden border-b border-white/10">
+      <section className="relative min-h-[88vh] lg:min-h-screen bg-black text-white flex items-center overflow-hidden border-b border-white/10">
         
         {/* User's custom background art overlay */}
         <div className="absolute inset-0 overflow-hidden pointer-events-none">
@@ -157,20 +159,21 @@ export const HomeView: React.FC<HomeViewProps> = ({ setCurrentView, onOpenQuote 
         </div>
         <div className="absolute -top-40 -left-40 w-96 h-96 bg-[#0199F7]/15 rounded-full blur-[120px] pointer-events-none" />
 
-        <div className="max-w-[1200px] mx-auto px-4 sm:px-6 lg:px-8 py-16 relative z-10 w-full my-auto">
-          <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+        <div className="w-full max-w-[1400px] 2xl:max-w-[1536px] mx-auto px-6 sm:px-10 lg:px-14 xl:px-16 py-16 lg:py-24 relative z-10">
+          <div className="grid grid-cols-1 lg:grid-cols-12 gap-10 lg:gap-14 xl:gap-20 items-center">
             
             {/* Left: Headline & Actions */}
-            <div className="lg:col-span-7 space-y-6 text-left">
+            <div className="lg:col-span-7 xl:col-span-6 space-y-7 text-left">
               <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-[#0199F7]/15 border border-[#0199F7]/30 text-[#0199F7] text-xs font-mono font-bold tracking-widest uppercase">
                 <span className="w-1.5 h-1.5 rounded-full bg-[#0199F7] animate-ping" />
                 <span>ENGINEERING THE POSSIBLE</span>
               </div>
 
-              <h1 className="text-4xl sm:text-5xl lg:text-[64px] font-black tracking-tight leading-[1.08] text-white text-balance">
+              <h1 className="text-4xl sm:text-5xl lg:text-[56px] xl:text-[66px] font-black tracking-tight leading-[1.08] text-white text-balance">
                 We Engineer<br />
+                <span className="text-[#0199F7]">What Comes</span>{' '}
                 <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#0199F7] via-cyan-300 to-white">
-                  What Comes Next.
+                  Next.
                 </span>
               </h1>
 
@@ -178,10 +181,10 @@ export const HomeView: React.FC<HomeViewProps> = ({ setCurrentView, onOpenQuote 
                 From advanced scientific technologies to renewable energy and healthcare infrastructure, FIVONIX connects engineering expertise with the technologies shaping tomorrow.
               </p>
 
-              <div className="flex flex-wrap items-center gap-4 pt-3">
+              <div className="flex flex-wrap items-center gap-4 pt-2">
                 <button
                   onClick={() => setCurrentView('solutions')}
-                  className="px-8 py-4 text-xs font-bold text-white bg-[#0199F7] hover:bg-blue-600 rounded-lg shadow-xl shadow-[#0199F7]/30 transition-all flex items-center gap-2.5 group cursor-pointer"
+                  className="px-8 py-4 text-xs font-bold text-white bg-[#0199F7] hover:bg-blue-600 rounded-lg transition-all flex items-center gap-2.5 group cursor-pointer"
                 >
                   <span>EXPLORE OUR CAPABILITIES</span>
                   <ArrowRight className="w-4 h-4 group-hover:translate-x-1 transition-transform" />
@@ -196,7 +199,7 @@ export const HomeView: React.FC<HomeViewProps> = ({ setCurrentView, onOpenQuote 
               </div>
 
               {/* Verified Trust Strip */}
-              <div className="grid grid-cols-3 gap-4 pt-8 border-t border-white/10">
+              <div className="grid grid-cols-3 gap-6 pt-8 border-t border-white/10 max-w-lg">
                 <div>
                   <div className="text-2xl font-black text-white font-mono">5+</div>
                   <div className="text-xs text-slate-400 font-medium">Core Verticals</div>
@@ -212,22 +215,11 @@ export const HomeView: React.FC<HomeViewProps> = ({ setCurrentView, onOpenQuote 
               </div>
             </div>
 
-            {/* Right: Custom 3D Interactive Centerpiece — completely unobstructed, exact original kinematics */}
-            <div className="lg:col-span-5 relative flex items-center justify-center">
+            {/* Right: Custom 3D Interactive Centerpiece — spacious, unconstrained, centered */}
+            <div className="lg:col-span-5 xl:col-span-6 relative flex items-center justify-center">
               <ThreeHeroCenterpiece />
             </div>
 
-          </div>
-        </div>
-
-        {/* Glow at the bottom of the hero section */}
-        <div className="relative w-full overflow-hidden pointer-events-none select-none z-10">
-          <div className="relative w-[140%] -left-[20%] h-20 sm:h-28">
-            {/* Atmospheric wide diffuse bloom */}
-            <div className="absolute bottom-0 left-0 right-0 h-24 bg-[#0199F7]/30 blur-[45px] rounded-[100%]" />
-            <div className="absolute bottom-0 left-[20%] right-[20%] h-14 bg-cyan-400/35 blur-[20px] rounded-[100%]" />
-            {/* Crisp radiant horizon rim line */}
-            <div className="absolute bottom-0 left-[10%] right-[10%] h-[2px] rounded-[100%] bg-gradient-to-r from-transparent via-cyan-200 via-[#0199F7] to-transparent shadow-[0_0_24px_5px_rgba(56,189,248,0.95)]" />
           </div>
         </div>
 
@@ -264,7 +256,7 @@ export const HomeView: React.FC<HomeViewProps> = ({ setCurrentView, onOpenQuote 
           <div className="pt-4 flex justify-center">
             <button
               onClick={() => setCurrentView('about')}
-              className="px-6 py-3.5 text-xs font-bold text-white bg-[#0199F7] hover:bg-blue-600 rounded-lg shadow-lg shadow-[#0199F7]/30 transition-all flex items-center gap-2 cursor-pointer"
+              className="px-6 py-3.5 text-xs font-bold text-white bg-[#0199F7] hover:bg-blue-600 rounded-lg /30 transition-all flex items-center gap-2 cursor-pointer"
             >
               <span>Explore Our Engineering Philosophy</span>
               <ArrowRight className="w-3.5 h-3.5 text-white" />
@@ -282,7 +274,7 @@ export const HomeView: React.FC<HomeViewProps> = ({ setCurrentView, onOpenQuote 
         <div className="absolute -top-36 left-1/2 -translate-x-1/2 w-[900px] h-[380px] bg-gradient-to-b from-[#0199F7]/18 via-[#01134C]/25 to-transparent blur-[110px] pointer-events-none rounded-full" />
         
         {/* Lateral planetary sphere rim glow (mirroring the right panel of the user's reference design) */}
-        <div className="absolute -right-44 top-1/4 w-[480px] h-[480px] rounded-full border border-cyan-400/20 bg-gradient-to-br from-[#0199F7]/12 via-[#01134C]/20 to-transparent blur-[1px] pointer-events-none shadow-[inset_25px_0_60px_rgba(56,189,248,0.35),0_0_90px_rgba(1,153,247,0.25)] hidden lg:block" />
+        <div className="absolute -right-44 top-1/4 w-[480px] h-[480px] rounded-full border border-cyan-400/20 bg-gradient-to-br from-[#0199F7]/12 via-[#01134C]/20 to-transparent blur-[1px] pointer-events-none  hidden lg:block" />
         <div className="absolute -right-24 top-1/3 w-72 h-72 rounded-full bg-cyan-400/15 blur-[80px] pointer-events-none hidden lg:block" />
 
         <div className="max-w-[1200px] mx-auto px-4 sm:px-6 lg:px-8 space-y-16 relative z-10">
@@ -303,7 +295,7 @@ export const HomeView: React.FC<HomeViewProps> = ({ setCurrentView, onOpenQuote 
             
             <button
               onClick={() => setCurrentView('solutions')}
-              className="px-6 py-3 text-xs font-bold text-white bg-[#0199F7] hover:bg-blue-600 rounded-lg shadow-xl shadow-[#0199F7]/30 transition-all shrink-0 cursor-pointer flex items-center gap-2 group"
+              className="px-6 py-3 text-xs font-bold text-white bg-[#0199F7] hover:bg-blue-600 rounded-lg  /30 transition-all shrink-0 cursor-pointer flex items-center gap-2 group"
             >
               <span>View Full Solutions</span>
               <ArrowRight className="w-3.5 h-3.5 group-hover:translate-x-1 transition-transform" />
@@ -321,12 +313,13 @@ export const HomeView: React.FC<HomeViewProps> = ({ setCurrentView, onOpenQuote 
                     onMouseEnter={() => setHoveredDivision(div.id)}
                     onMouseLeave={() => setHoveredDivision(null)}
                     onClick={() => setCurrentView('solutions')}
-                    className={`bg-[#050814]/90 backdrop-blur-md border rounded-2xl overflow-hidden cursor-pointer transition-all duration-500 flex flex-col justify-between relative z-10 shadow-2xl ${
+                    className={`bg-[#050814]/90 backdrop-blur-md border rounded-2xl overflow-hidden cursor-pointer transition-all duration-500 flex flex-col justify-between relative z-10  ${
                       isHovered 
-                        ? 'border-cyan-400/80 -translate-y-2.5 shadow-[0_15px_40px_-5px_rgba(1,153,247,0.45)]' 
+                        ? 'border-cyan-400/80 -translate-y-2.5 ' 
                         : 'border-white/10 hover:border-[#0199F7]/50'
                     }`}
                   >
+                    <MacWindowHeader title={`VERTICAL_${div.num}`} />
                     <div className="relative h-60 overflow-hidden bg-black">
                       <img 
                         src={div.img} 
@@ -370,7 +363,7 @@ export const HomeView: React.FC<HomeViewProps> = ({ setCurrentView, onOpenQuote 
                     {/* Concentrated slit light bar */}
                     <div 
                       className={`w-full h-[2px] bg-gradient-to-r from-transparent via-[#0199F7] to-transparent transition-all duration-500 ${
-                        isHovered ? 'via-cyan-300 scale-x-110 opacity-100 shadow-[0_0_20px_4px_rgba(56,189,248,0.95)]' : 'opacity-40'
+                        isHovered ? 'via-cyan-300 scale-x-110 opacity-100 ' : 'opacity-40'
                       }`} 
                     />
                     {/* Diffused turquoise ground emission wash */}
@@ -387,8 +380,8 @@ export const HomeView: React.FC<HomeViewProps> = ({ setCurrentView, onOpenQuote 
 
         </div>
 
-        {/* The Signature Planetary Horizon Arc Glow (exact match of reference image's celestial horizon) */}
-        <CelestialHorizonGlow className="pt-20 -mb-6" />
+        {/* Signature Planetary Horizon Arc Glow */}
+        <CelestialHorizonGlow className="pt-20 -mb-6 pointer-events-none" />
 
       </section>
 
@@ -425,7 +418,7 @@ export const HomeView: React.FC<HomeViewProps> = ({ setCurrentView, onOpenQuote 
                   onClick={() => setActiveStage(idx)}
                   className={`text-left p-5 rounded-xl border transition-all duration-300 space-y-2 cursor-pointer ${
                     isActive
-                      ? 'bg-[#0199F7]/15 border-[#0199F7] shadow-lg shadow-[#0199F7]/20'
+                      ? 'bg-[#0199F7]/15 border-[#0199F7] /20'
                       : 'bg-[#05070f] border-white/10 hover:border-white/20'
                   }`}
                 >
@@ -443,7 +436,7 @@ export const HomeView: React.FC<HomeViewProps> = ({ setCurrentView, onOpenQuote 
           </div>
 
           {/* Active Stage Detailed Breakdown Panel */}
-          <div className="bg-[#05070f] border border-white/10 rounded-2xl p-8 sm:p-10 shadow-2xl grid grid-cols-1 md:grid-cols-12 gap-8 items-center">
+          <div className="bg-[#05070f] border border-white/10 rounded-2xl p-8 sm:p-10  grid grid-cols-1 md:grid-cols-12 gap-8 items-center">
             <div className="md:col-span-8 space-y-4">
               <span className="text-xs font-mono font-bold text-[#0199F7] uppercase tracking-widest">
                 PHASE {stages[activeStage].step} DEEP-DIVE
@@ -475,7 +468,7 @@ export const HomeView: React.FC<HomeViewProps> = ({ setCurrentView, onOpenQuote 
               </p>
               <button
                 onClick={onOpenQuote}
-                className="w-full py-2.5 text-xs font-bold text-white bg-[#0199F7] hover:bg-blue-600 rounded-lg shadow-lg shadow-[#0199F7]/25 cursor-pointer"
+                className="w-full py-2.5 text-xs font-bold text-white bg-[#0199F7] hover:bg-blue-600 rounded-lg /25 cursor-pointer"
               >
                 Discuss Technical Milestones
               </button>
@@ -488,8 +481,19 @@ export const HomeView: React.FC<HomeViewProps> = ({ setCurrentView, onOpenQuote 
       {/* =========================================================================
           SECTION 5 — INDUSTRIES (Engineering Across Every Critical Industry)
           ========================================================================= */}
-      <section className="py-24 bg-black text-white border-b border-white/10">
-        <div className="max-w-[1200px] mx-auto px-4 sm:px-6 lg:px-8 space-y-16">
+      <section className="relative py-24 bg-black text-white border-b border-white/10 overflow-hidden">
+        {/* User's custom background art: bg.png */}
+        <div className="absolute inset-0 overflow-hidden pointer-events-none">
+          <img 
+            src={bgPng} 
+            alt="Industries Background" 
+            className="w-full h-full object-cover object-center opacity-65 select-none"
+          />
+          <div className="absolute inset-0 bg-black/50" />
+          <div className="absolute inset-0 bg-gradient-to-t from-black via-transparent to-black" />
+        </div>
+
+        <div className="max-w-[1200px] mx-auto px-4 sm:px-6 lg:px-8 space-y-16 relative z-10">
           
           <div className="flex flex-col md:flex-row md:items-end justify-between gap-6 pb-4 border-b border-white/10">
             <div className="space-y-3 max-w-2xl">
@@ -505,7 +509,7 @@ export const HomeView: React.FC<HomeViewProps> = ({ setCurrentView, onOpenQuote 
             </div>
             <button
               onClick={() => setCurrentView('industries')}
-              className="px-5 py-2.5 text-xs font-bold text-white bg-[#0199F7] hover:bg-blue-600 rounded-lg shadow-lg shadow-[#0199F7]/25 transition-all shrink-0 cursor-pointer"
+              className="px-5 py-2.5 text-xs font-bold text-white bg-[#0199F7] hover:bg-blue-600 rounded-lg /25 transition-all shrink-0 cursor-pointer"
             >
               Explore All Industries
             </button>
@@ -518,32 +522,35 @@ export const HomeView: React.FC<HomeViewProps> = ({ setCurrentView, onOpenQuote 
                 <div
                   key={idx}
                   onClick={() => setCurrentView('industries')}
-                  className="bg-[#05070f] border border-white/10 rounded-2xl p-6 hover:border-[#0199F7] hover:-translate-y-1.5 transition-all cursor-pointer flex flex-col justify-between group shadow-xl"
+                  className="bg-[#05070f] border border-white/10 rounded-2xl overflow-hidden hover:border-[#0199F7] hover:-translate-y-1.5 transition-all cursor-pointer flex flex-col justify-between group "
                 >
-                  <div className="space-y-4">
-                    <div className="flex items-center justify-between">
-                      <div className="w-12 h-12 rounded-xl bg-[#0199F7]/15 text-[#0199F7] flex items-center justify-center font-bold">
-                        <Icon className="w-6 h-6" />
+                  <MacWindowHeader title={`MARKET_0${idx + 1}`} />
+                  <div className="p-6 space-y-4 flex-1 flex flex-col justify-between">
+                    <div className="space-y-4">
+                      <div className="flex items-center justify-between">
+                        <div className="w-12 h-12 rounded-xl bg-[#0199F7]/15 text-[#0199F7] flex items-center justify-center font-bold">
+                          <Icon className="w-6 h-6" />
+                        </div>
+                        <span className="text-[10px] font-mono uppercase px-2.5 py-1 rounded bg-black text-[#0199F7] border border-white/10 font-bold">
+                          {ind.stat}
+                        </span>
                       </div>
-                      <span className="text-[10px] font-mono uppercase px-2.5 py-1 rounded bg-black text-[#0199F7] border border-white/10 font-bold">
-                        {ind.stat}
-                      </span>
+
+                      <div className="space-y-1">
+                        <h3 className="text-lg font-bold text-white group-hover:text-[#0199F7] transition-colors">
+                          {ind.title}
+                        </h3>
+                        <p className="text-xs font-semibold text-slate-400">{ind.subtitle}</p>
+                        <p className="text-xs text-slate-400 leading-relaxed pt-2">
+                          {ind.desc}
+                        </p>
+                      </div>
                     </div>
 
-                    <div className="space-y-1">
-                      <h3 className="text-lg font-bold text-white group-hover:text-[#0199F7] transition-colors">
-                        {ind.title}
-                      </h3>
-                      <p className="text-xs font-semibold text-slate-400">{ind.subtitle}</p>
-                      <p className="text-xs text-slate-400 leading-relaxed pt-2">
-                        {ind.desc}
-                      </p>
+                    <div className="pt-4 mt-4 border-t border-white/10 flex items-center justify-between text-xs font-bold text-[#0199F7]">
+                      <span>View Specifications</span>
+                      <ArrowRight className="w-4 h-4 group-hover:translate-x-1 transition-transform" />
                     </div>
-                  </div>
-
-                  <div className="pt-4 mt-4 border-t border-white/10 flex items-center justify-between text-xs font-bold text-[#0199F7]">
-                    <span>View Specifications</span>
-                    <ArrowRight className="w-4 h-4 group-hover:translate-x-1 transition-transform" />
                   </div>
                 </div>
               );
@@ -556,8 +563,19 @@ export const HomeView: React.FC<HomeViewProps> = ({ setCurrentView, onOpenQuote 
       {/* =========================================================================
           SECTION 6 — PRODUCTS (The Right Technology Changes Everything)
           ========================================================================= */}
-      <section className="py-24 bg-black text-white border-b border-white/10">
-        <div className="max-w-[1200px] mx-auto px-4 sm:px-6 lg:px-8 space-y-16">
+      <section className="relative py-24 bg-black text-white border-b border-white/10 overflow-hidden">
+        {/* User's custom background art: techRibbonBg */}
+        <div className="absolute inset-0 overflow-hidden pointer-events-none">
+          <img 
+            src={techRibbonBg} 
+            alt="Products Background" 
+            className="w-full h-full object-cover object-center opacity-60 select-none"
+          />
+          <div className="absolute inset-0 bg-black/60" />
+          <div className="absolute inset-0 bg-gradient-to-t from-black via-transparent to-black" />
+        </div>
+
+        <div className="max-w-[1200px] mx-auto px-4 sm:px-6 lg:px-8 space-y-16 relative z-10">
           
           <div className="flex flex-col md:flex-row md:items-end justify-between gap-6 pb-4 border-b border-white/10">
             <div className="space-y-3 max-w-2xl">
@@ -573,7 +591,7 @@ export const HomeView: React.FC<HomeViewProps> = ({ setCurrentView, onOpenQuote 
             </div>
             <button
               onClick={() => setCurrentView('products')}
-              className="px-6 py-3 text-xs font-bold text-white bg-[#0199F7] hover:bg-blue-600 rounded-lg shadow-lg shadow-[#0199F7]/30 transition-all flex items-center gap-2 shrink-0 cursor-pointer"
+              className="px-6 py-3 text-xs font-bold text-white bg-[#0199F7] hover:bg-blue-600 rounded-lg /30 transition-all flex items-center gap-2 shrink-0 cursor-pointer"
             >
               <span>Explore Complete Catalogue</span>
               <ArrowRight className="w-4 h-4" />
@@ -585,8 +603,9 @@ export const HomeView: React.FC<HomeViewProps> = ({ setCurrentView, onOpenQuote 
               <div 
                 key={prod.id}
                 onClick={() => setCurrentView('products')}
-                className="bg-[#05070f] border border-white/10 rounded-2xl overflow-hidden hover:border-[#0199F7] transition-all cursor-pointer flex flex-col justify-between group shadow-xl"
+                className="bg-[#05070f] border border-white/10 rounded-2xl overflow-hidden hover:border-[#0199F7] transition-all cursor-pointer flex flex-col justify-between group "
               >
+                <MacWindowHeader title={prod.categoryLabel} />
                 <div className="h-56 bg-black overflow-hidden relative">
                   <img 
                     src={prod.image} 
@@ -624,10 +643,21 @@ export const HomeView: React.FC<HomeViewProps> = ({ setCurrentView, onOpenQuote 
       </section>
 
       {/* =========================================================================
-          FAQ ACCORDION
+          FAQ ACCORDION (Frequently Asked Technical Questions)
           ========================================================================= */}
-      <section className="py-24 bg-black text-white border-b border-white/10">
-        <div className="max-w-[900px] mx-auto px-4 sm:px-6 lg:px-8 space-y-12">
+      <section className="relative py-24 bg-black text-white border-b border-white/10 overflow-hidden">
+        {/* User's custom background art: quantumOrbBg */}
+        <div className="absolute inset-0 overflow-hidden pointer-events-none">
+          <img 
+            src={quantumOrbBg} 
+            alt="FAQ Background" 
+            className="w-full h-full object-cover object-center opacity-55 select-none"
+          />
+          <div className="absolute inset-0 bg-black/65" />
+          <div className="absolute inset-0 bg-gradient-to-t from-black via-black/40 to-black" />
+        </div>
+
+        <div className="max-w-[900px] mx-auto px-4 sm:px-6 lg:px-8 space-y-12 relative z-10">
           
           <div className="text-center max-w-2xl mx-auto space-y-3">
             <span className="text-xs font-mono font-bold text-[#0199F7] uppercase tracking-wider">QUESTIONS & ANSWERS</span>
@@ -640,7 +670,7 @@ export const HomeView: React.FC<HomeViewProps> = ({ setCurrentView, onOpenQuote 
             {FAQ_ITEMS.map((faq, idx) => {
               const isOpen = openFaq === idx;
               return (
-                <div key={idx} className="bg-[#05070f] border border-white/10 rounded-xl overflow-hidden shadow-xl">
+                <div key={idx} className="bg-[#05070f] border border-white/10 rounded-xl overflow-hidden ">
                   <button
                     onClick={() => setOpenFaq(isOpen ? null : idx)}
                     className="w-full px-6 py-4 flex items-center justify-between text-left font-bold text-sm text-white cursor-pointer"
@@ -662,9 +692,9 @@ export const HomeView: React.FC<HomeViewProps> = ({ setCurrentView, onOpenQuote 
       </section>
 
       {/* =========================================================================
-          SECTION 7 — FINAL CTA (Cinematic Pure Black with Subtle Ribbon Overlay)
+          SECTION 7 — FINAL CTA (Have Something Ambitious in Mind?) with Reference Glow
           ========================================================================= */}
-      <section className="relative py-28 bg-black text-white text-center border-t border-white/10 overflow-hidden">
+      <section className="relative py-32 bg-black text-white text-center border-t border-white/10 overflow-hidden">
         {/* User's custom background art */}
         <div className="absolute inset-0 overflow-hidden pointer-events-none">
           <img 
@@ -672,10 +702,11 @@ export const HomeView: React.FC<HomeViewProps> = ({ setCurrentView, onOpenQuote 
             alt="CTA Background Ribbon" 
             className="w-full h-full object-cover object-center opacity-40 select-none"
           />
-          <div className="absolute inset-0 bg-gradient-to-t from-black via-black/80 to-black" />
+          <div className="absolute inset-0 bg-black/70" />
+          <div className="absolute inset-0 bg-gradient-to-t from-black via-black/60 to-black" />
         </div>
 
-        <div className="max-w-[800px] mx-auto px-4 sm:px-6 lg:px-8 relative z-10 space-y-6">
+        <div className="max-w-[800px] mx-auto px-4 sm:px-6 lg:px-8 relative z-10 space-y-6 pb-10">
           <span className="text-xs font-mono font-bold text-[#0199F7] uppercase tracking-widest block">
             // COLLABORATION & INQUIRY
           </span>
@@ -688,7 +719,7 @@ export const HomeView: React.FC<HomeViewProps> = ({ setCurrentView, onOpenQuote 
           <div className="pt-4 flex flex-wrap justify-center items-center gap-4">
             <button
               onClick={onOpenQuote}
-              className="px-9 py-4 text-xs font-bold text-white bg-[#0199F7] hover:bg-blue-600 rounded-lg shadow-2xl shadow-[#0199F7]/40 transition-all transform hover:-translate-y-0.5 cursor-pointer"
+              className="px-9 py-4 text-xs font-bold text-white bg-[#0199F7] hover:bg-blue-600 rounded-lg /40 transition-all transform hover:-translate-y-0.5 cursor-pointer"
             >
               START A CONVERSATION
             </button>

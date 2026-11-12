@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import { Sun, FlaskConical, Stethoscope, Atom, Radio, ArrowRight, CheckCircle2, Cpu, Zap, Activity } from 'lucide-react';
+import beyondPossibilitiesBg from '../assets/beyond_possibilities_bg.jpg';
 
 interface DisciplineData {
   id: string;
@@ -114,18 +115,31 @@ export const InteractiveEngineeringVisualizer: React.FC<{ onExplore: () => void 
   const active = disciplines.find(d => d.id === activeId) || disciplines[0];
 
   return (
-    <div className="bg-black text-white py-20 px-4 sm:px-6 lg:px-8 border-b border-white/10">
-      <div className="max-w-[1200px] mx-auto space-y-12">
+    <div className="relative bg-black text-white py-24 px-4 sm:px-6 lg:px-12 border-b border-white/10 overflow-hidden">
+      {/* User's custom background art for Beyond Products. Into Possibilities. */}
+      <div className="absolute inset-0 overflow-hidden pointer-events-none">
+        <img 
+          src={beyondPossibilitiesBg} 
+          alt="Beyond Products Background" 
+          className="w-full h-full object-cover object-center opacity-70 select-none"
+        />
+        {/* Subtle balanced gradient overlay to ensure technical UI and text remain crisp and 100% legible */}
+        <div className="absolute inset-0 bg-black/45 backdrop-blur-[0.5px]" />
+        <div className="absolute inset-0 bg-gradient-to-t from-black via-transparent to-black/80" />
+        <div className="absolute inset-0 bg-gradient-to-r from-black/75 via-black/35 to-black/75" />
+      </div>
+
+      <div className="w-full max-w-[1400px] 2xl:max-w-[1536px] mx-auto space-y-12 relative z-10">
         
         {/* Section Header */}
         <div className="max-w-2xl space-y-3">
           <div className="inline-flex items-center gap-2 px-3 py-1 rounded bg-[#0199F7]/20 border border-[#0199F7]/30 text-[#0199F7] text-xs font-bold tracking-wider">
             <span>INTERACTIVE TECHNICAL VISUALIZATION</span>
           </div>
-          <h2 className="text-3xl sm:text-4xl font-black text-white tracking-tight">
+          <h2 className="text-3xl sm:text-4xl lg:text-5xl font-black text-white tracking-tight">
             Beyond Products. Into Possibilities.
           </h2>
-          <p className="text-sm text-slate-300 leading-relaxed">
+          <p className="text-sm sm:text-base text-slate-300 leading-relaxed">
             Select an engineering vertical to inspect how FIVONIX integrates application engineering, global technology, and certified commissioning.
           </p>
         </div>
@@ -148,7 +162,7 @@ export const InteractiveEngineeringVisualizer: React.FC<{ onExplore: () => void 
                   onClick={() => setActiveId(d.id)}
                   className={`w-full text-left p-4 rounded-xl border transition-all duration-300 flex items-center justify-between group cursor-pointer ${
                     isSelected
-                      ? 'bg-[#0199F7]/15 border-[#0199F7] shadow-lg shadow-[#0199F7]/20 scale-[1.02]'
+                      ? 'bg-[#0199F7]/15 border-[#0199F7] /20 scale-[1.02]'
                       : 'bg-[#05070f] border-white/10 hover:border-white/25 hover:bg-[#080d1e]'
                   }`}
                 >
@@ -180,7 +194,7 @@ export const InteractiveEngineeringVisualizer: React.FC<{ onExplore: () => void 
           </div>
 
           {/* Right Column: Dynamic Deep Telemetry & Technical Specification Inspector */}
-          <div className="lg:col-span-7 bg-[#05070f] border border-white/10 rounded-2xl p-6 sm:p-8 flex flex-col justify-between shadow-2xl relative overflow-hidden">
+          <div className="lg:col-span-7 bg-[#05070f] border border-white/10 rounded-2xl p-6 sm:p-8 flex flex-col justify-between  relative overflow-hidden">
             {/* Ambient Background Accent */}
             <div className="absolute top-0 right-0 w-80 h-80 bg-[#0199F7]/10 rounded-full blur-3xl pointer-events-none" />
 
@@ -246,7 +260,7 @@ export const InteractiveEngineeringVisualizer: React.FC<{ onExplore: () => void 
               </div>
               <button
                 onClick={onExplore}
-                className="px-5 py-2.5 text-xs font-bold text-white bg-[#0199F7] hover:bg-blue-600 rounded-lg shadow-md transition-all flex items-center gap-2"
+                className="px-5 py-2.5 text-xs font-bold text-white bg-[#0199F7] hover:bg-blue-600 rounded-lg  transition-all flex items-center gap-2"
               >
                 <span>View Specifications in Catalogue</span>
                 <ArrowRight className="w-3.5 h-3.5" />

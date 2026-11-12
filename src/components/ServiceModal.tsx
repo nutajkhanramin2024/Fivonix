@@ -14,7 +14,7 @@ export const ServiceModal: React.FC<ServiceModalProps> = ({ service, onClose, on
   return (
     <div className="fixed inset-0 z-50 flex items-center justify-center p-4 bg-slate-950/80 backdrop-blur-md animate-fadeIn">
       <div 
-        className="relative w-full max-w-2xl bg-slate-900 border border-blue-900/60 rounded-3xl p-6 sm:p-8 shadow-2xl space-y-6 text-left"
+        className="relative w-full max-w-2xl bg-slate-900 border border-blue-900/60 rounded-3xl p-6 sm:p-8  space-y-6 text-left"
         onClick={(e) => e.stopPropagation()}
       >
         {/* Close Button */}
@@ -82,7 +82,7 @@ export const ServiceModal: React.FC<ServiceModalProps> = ({ service, onClose, on
               onClose();
               onSelectService(service.title);
             }}
-            className="px-6 py-2.5 text-xs font-bold text-white bg-blue-600 hover:bg-blue-500 rounded-xl shadow-lg shadow-blue-600/30 flex items-center gap-2 transition-all"
+            className="px-6 py-2.5 text-xs font-bold text-white bg-blue-600 hover:bg-blue-500 rounded-xl  shadow-blue-600/30 flex items-center gap-2 transition-all"
           >
             <span>Inquire About This Service</span>
             <ArrowRight className="w-4 h-4" />

@@ -60,7 +60,7 @@ export const Hero: React.FC<HeroProps> = ({ onOpenContact }) => {
 
           {/* Right: Clean Product Mockup Card */}
           <div className="lg:col-span-5">
-            <div className="bg-slate-900 border border-slate-800 rounded-xl p-6 shadow-2xl space-y-5">
+            <div className="bg-slate-900 border border-slate-800 rounded-xl p-6  space-y-5">
               <div className="flex items-center justify-between pb-4 border-b border-slate-800">
                 <div className="flex items-center gap-2">
                   <div className="w-3 h-3 rounded-full bg-slate-700" />

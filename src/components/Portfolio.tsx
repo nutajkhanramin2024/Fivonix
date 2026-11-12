@@ -59,7 +59,7 @@ export const Portfolio: React.FC<PortfolioProps> = ({ onOpenContact }) => {
             <div
               key={item.id}
               onClick={() => setSelectedItem(item)}
-              className="bg-[#F6F8FB] border border-[#E2E8F0] rounded-[10px] overflow-hidden hover:border-[#1D4ED8] hover:shadow-md transition-all cursor-pointer flex flex-col justify-between"
+              className="bg-[#F6F8FB] border border-[#E2E8F0] rounded-[10px] overflow-hidden hover:border-[#1D4ED8] hover: transition-all cursor-pointer flex flex-col justify-between"
             >
               <div className="relative h-48 overflow-hidden bg-slate-100">
                 <img
@@ -92,7 +92,7 @@ export const Portfolio: React.FC<PortfolioProps> = ({ onOpenContact }) => {
       {selectedItem && (
         <div className="fixed inset-0 z-50 flex items-center justify-center p-4 bg-slate-900/60 backdrop-blur-sm">
           <div 
-            className="w-full max-w-2xl max-h-[90vh] overflow-y-auto bg-white border border-[#E2E8F0] rounded-[10px] p-6 sm:p-8 shadow-xl space-y-6 text-left relative"
+            className="w-full max-w-2xl max-h-[90vh] overflow-y-auto bg-white border border-[#E2E8F0] rounded-[10px] p-6 sm:p-8  space-y-6 text-left relative"
             onClick={(e) => e.stopPropagation()}
           >
             <button 

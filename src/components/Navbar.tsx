@@ -34,9 +34,9 @@ export const Navbar: React.FC<NavbarProps> = ({
 
   return (
     <>
-      {/* Top Utility Bar */}
-      <div className="bg-black text-slate-400 text-xs py-2 px-4 sm:px-6 lg:px-8 border-b border-white/10">
-        <div className="max-w-[1200px] mx-auto flex flex-col sm:flex-row items-center justify-between gap-2">
+      {/* Top Utility Bar (Full Width Edge to Edge) */}
+      <div className="bg-black text-slate-400 text-xs py-2 px-4 sm:px-6 lg:px-10 xl:px-12 border-b border-white/10 w-full">
+        <div className="w-full flex flex-col sm:flex-row items-center justify-between gap-2">
           <div className="flex items-center gap-6">
             <span>Email: <strong className="text-white">contact@fivonix.com.bd</strong></span>
             <span>Phone: <strong className="text-white">+880 1700-000000</strong></span>
@@ -48,18 +48,18 @@ export const Navbar: React.FC<NavbarProps> = ({
         </div>
       </div>
 
-      {/* Main Sticky Navbar (Cinematic Black Glass) */}
-      <header className={`sticky top-0 z-40 transition-all duration-300 bg-black/90 backdrop-blur-md ${
-        isScrolled ? 'border-b border-white/15 shadow-2xl py-3' : 'py-4 border-b border-white/10'
+      {/* Main Sticky Navbar (Full Width Edge to Edge) */}
+      <header className={`sticky top-0 z-40 transition-all duration-300 bg-black/90 backdrop-blur-md w-full ${
+        isScrolled ? 'border-b border-white/15  py-3' : 'py-4 border-b border-white/10'
       }`}>
-        <div className="max-w-[1200px] mx-auto px-4 sm:px-6 lg:px-8 flex items-center justify-between">
+        <div className="w-full px-4 sm:px-6 lg:px-10 xl:px-12 flex items-center justify-between">
           
           {/* Brand Logo */}
           <button 
             onClick={() => setCurrentView('home')} 
             className="flex items-center gap-3 text-left focus:outline-none group"
           >
-            <div className="w-10 h-10 rounded-lg bg-[#0199F7] flex items-center justify-center text-white font-black text-lg tracking-wider shadow-lg shadow-[#0199F7]/30 group-hover:scale-105 transition-transform">
+            <div className="w-10 h-10 rounded-lg bg-[#0199F7] flex items-center justify-center text-white font-black text-lg tracking-wider /30 group-hover:scale-105 transition-transform">
               FX
             </div>
             <div className="flex flex-col">
@@ -162,7 +162,7 @@ export const Navbar: React.FC<NavbarProps> = ({
             >
               <ShoppingBag className="w-5 h-5 text-slate-200" />
               {enquiryBasket.length > 0 && (
-                <span className="absolute -top-1.5 -right-1.5 w-5 h-5 rounded-full bg-[#0199F7] text-white text-[10px] font-bold flex items-center justify-center shadow-md">
+                <span className="absolute -top-1.5 -right-1.5 w-5 h-5 rounded-full bg-[#0199F7] text-white text-[10px] font-bold flex items-center justify-center ">
                   {enquiryBasket.length}
                 </span>
               )}
@@ -171,7 +171,7 @@ export const Navbar: React.FC<NavbarProps> = ({
             {/* Request a Quote Button */}
             <button
               onClick={onOpenQuote}
-              className="hidden sm:inline-flex px-5 py-2.5 text-xs font-bold text-white bg-[#0199F7] hover:bg-blue-600 rounded-lg shadow-md shadow-[#0199F7]/30 transition-all"
+              className="hidden sm:inline-flex px-5 py-2.5 text-xs font-bold text-white bg-[#0199F7] hover:bg-blue-600 rounded-lg /30 transition-all"
             >
               REQUEST A QUOTE
             </button>
@@ -188,7 +188,7 @@ export const Navbar: React.FC<NavbarProps> = ({
 
         {/* Mobile Navigation Drawer */}
         {mobileMenuOpen && (
-          <div className="lg:hidden absolute top-full left-0 right-0 bg-black/95 backdrop-blur-md border-b border-white/10 px-6 py-6 space-y-3 shadow-2xl">
+          <div className="lg:hidden absolute top-full left-0 right-0 bg-black/95 backdrop-blur-md border-b border-white/10 px-6 py-6 space-y-3 ">
             <button 
               onClick={() => { setCurrentView('home'); setMobileMenuOpen(false); }}
               className="block w-full text-left text-sm font-bold text-white py-2 border-b border-white/10"

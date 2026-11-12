@@ -77,7 +77,7 @@ export const QuoteCalculator: React.FC = () => {
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 items-start">
           
           {/* Left: Options */}
-          <div className="lg:col-span-7 bg-white border border-[#E2E8F0] rounded-[10px] p-6 sm:p-8 space-y-8 shadow-sm">
+          <div className="lg:col-span-7 bg-white border border-[#E2E8F0] rounded-[10px] p-6 sm:p-8 space-y-8 ">
             
             {/* 1. Project Type */}
             <div className="space-y-3">
@@ -167,7 +167,7 @@ export const QuoteCalculator: React.FC = () => {
           </div>
 
           {/* Right: Summary & Form */}
-          <div className="lg:col-span-5 bg-white border border-[#E2E8F0] rounded-[10px] p-6 sm:p-8 space-y-6 shadow-sm">
+          <div className="lg:col-span-5 bg-white border border-[#E2E8F0] rounded-[10px] p-6 sm:p-8 space-y-6 ">
             <div className="flex items-center gap-3">
               <div className="p-2.5 rounded-lg bg-[#EAF1FB] text-[#1D4ED8]">
                 <Calculator className="w-5 h-5" />

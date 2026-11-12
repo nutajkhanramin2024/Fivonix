@@ -46,7 +46,7 @@ export const LiveChatWidget: React.FC = () => {
       {!isOpen && (
         <button
           onClick={() => setIsOpen(true)}
-          className="flex items-center gap-2.5 px-5 py-3.5 bg-gradient-to-r from-blue-600 to-cyan-500 text-white rounded-full shadow-2xl hover:shadow-blue-500/50 hover:scale-105 transition-all font-semibold text-xs"
+          className="flex items-center gap-2.5 px-5 py-3.5 bg-gradient-to-r from-blue-600 to-cyan-500 text-white rounded-full  hover:shadow-blue-500/50 hover:scale-105 transition-all font-semibold text-xs"
         >
           <MessageSquare className="w-5 h-5" />
           <span>Chat with Fivonix Support</span>
@@ -54,7 +54,7 @@ export const LiveChatWidget: React.FC = () => {
       )}
 
       {isOpen && (
-        <div className="w-80 sm:w-96 bg-slate-900 border border-blue-900/60 rounded-3xl shadow-2xl flex flex-col overflow-hidden animate-fadeIn">
+        <div className="w-80 sm:w-96 bg-slate-900 border border-blue-900/60 rounded-3xl  flex flex-col overflow-hidden animate-fadeIn">
           {/* Header */}
           <div className="p-4 bg-slate-950 border-b border-blue-900/40 flex items-center justify-between">
             <div className="flex items-center gap-2.5">
@@ -106,7 +106,7 @@ export const LiveChatWidget: React.FC = () => {
             />
             <button
               type="submit"
-              className="p-2.5 bg-blue-600 hover:bg-blue-500 text-white rounded-xl transition-colors shadow-md"
+              className="p-2.5 bg-blue-600 hover:bg-blue-500 text-white rounded-xl transition-colors "
             >
               <Send className="w-4 h-4" />
             </button>

@@ -1,3 +1,4 @@
+import bgPng from "../assets/bg.png";
 import React, { useState } from 'react';
 import { Mail, Phone, MapPin, Send, CheckCircle2 } from 'lucide-react';
 
@@ -22,8 +23,19 @@ export const ContactView: React.FC = () => {
   return (
     <div className="py-16 bg-black min-h-screen space-y-16 text-slate-300">
       
-      <div className="bg-black text-white py-16 border-b border-white/10">
-        <div className="max-w-[1200px] mx-auto px-4 sm:px-6 lg:px-8 space-y-4">
+      <div className="relative bg-black text-white py-20 lg:py-24 border-b border-white/10 overflow-hidden">
+        {/* User custom background art: bg.png */}
+        <div className="absolute inset-0 overflow-hidden pointer-events-none">
+          <img 
+            src={bgPng} 
+            alt="Page Background" 
+            className="w-full h-full object-cover object-center opacity-65 select-none"
+          />
+          <div className="absolute inset-0 bg-black/55" />
+          <div className="absolute inset-0 bg-gradient-to-t from-black via-transparent to-black" />
+        </div>
+
+        <div className="max-w-[1200px] mx-auto px-4 sm:px-6 lg:px-8 space-y-4 relative z-10">
           <span className="text-xs font-semibold text-[#0199F7] uppercase tracking-wider">Contact FIVONIX</span>
           <h1 className="text-3xl sm:text-4xl lg:text-5xl font-black tracking-tight text-white">
             Let's Discuss Your Next Project.
@@ -39,7 +51,7 @@ export const ContactView: React.FC = () => {
           
           {/* Contact Details */}
           <div className="lg:col-span-5 space-y-6">
-            <div className="bg-[#05070f] border border-white/10 rounded-2xl p-8 shadow-2xl space-y-6">
+            <div className="bg-[#05070f] border border-white/10 rounded-2xl p-8  space-y-6">
               <h3 className="text-base font-bold text-white">Headquarters & Office</h3>
 
               <div className="space-y-4 text-xs text-slate-300">
@@ -75,7 +87,7 @@ export const ContactView: React.FC = () => {
           </div>
 
           {/* Contact Form */}
-          <div className="lg:col-span-7 bg-[#05070f] border border-white/10 rounded-2xl p-8 shadow-2xl">
+          <div className="lg:col-span-7 bg-[#05070f] border border-white/10 rounded-2xl p-8 ">
             {submitted ? (
               <div className="py-16 text-center space-y-3">
                 <CheckCircle2 className="w-12 h-12 text-emerald-400 mx-auto" />
@@ -183,7 +195,7 @@ export const ContactView: React.FC = () => {
 
                 <button
                   type="submit"
-                  className="w-full py-4 text-xs font-bold text-white bg-[#0199F7] hover:bg-blue-600 rounded-lg shadow-lg shadow-[#0199F7]/30 transition-all flex items-center justify-center gap-2 cursor-pointer"
+                  className="w-full py-4 text-xs font-bold text-white bg-[#0199F7] hover:bg-blue-600 rounded-lg /30 transition-all flex items-center justify-center gap-2 cursor-pointer"
                 >
                   <span>Submit Project Enquiry</span>
                   <Send className="w-4 h-4" />

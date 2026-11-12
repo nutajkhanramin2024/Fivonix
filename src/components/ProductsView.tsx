@@ -2,6 +2,8 @@ import React, { useState } from 'react';
 import { Search, Filter, ShoppingBag, Check, X } from 'lucide-react';
 import { PRODUCTS } from '../data/mockData';
 import { Product } from '../types';
+import bgPng from '../assets/bg.png';
+import { MacWindowHeader } from './MacWindowHeader';
 
 interface ProductsViewProps {
   enquiryBasket: Product[];
@@ -41,21 +43,35 @@ export const ProductsView: React.FC<ProductsViewProps> = ({
 
   return (
     <div className="py-16 bg-black min-h-screen space-y-12 text-slate-300">
-      <div className="max-w-[1200px] mx-auto px-4 sm:px-6 lg:px-8 space-y-12">
-        
-        {/* Header */}
-        <div className="space-y-3">
+      
+      {/* Header */}
+      <div className="relative bg-black text-white py-20 lg:py-24 border-b border-white/10 overflow-hidden">
+        {/* User custom background art: bg.png */}
+        <div className="absolute inset-0 overflow-hidden pointer-events-none">
+          <img 
+            src={bgPng} 
+            alt="Page Background" 
+            className="w-full h-full object-cover object-center opacity-65 select-none"
+          />
+          <div className="absolute inset-0 bg-black/55" />
+          <div className="absolute inset-0 bg-gradient-to-t from-black via-transparent to-black" />
+        </div>
+
+        <div className="max-w-[1200px] mx-auto px-4 sm:px-6 lg:px-8 space-y-3 relative z-10">
           <span className="text-xs font-semibold text-[#0199F7] uppercase tracking-wider">Catalogue & Equipment</span>
-          <h1 className="text-3xl sm:text-4xl font-black text-white tracking-tight">
+          <h1 className="text-3xl sm:text-4xl lg:text-5xl font-black text-white tracking-tight">
             Explore Our Product Catalogue.
           </h1>
-          <p className="text-sm text-slate-400 max-w-2xl leading-relaxed">
+          <p className="text-sm sm:text-base text-slate-300 max-w-2xl leading-relaxed">
             Discover scientific instruments, medical equipment, laboratory systems, renewable energy technologies and specialized engineering products from global manufacturers.
           </p>
         </div>
+      </div>
+
+      <div className="max-w-[1200px] mx-auto px-4 sm:px-6 lg:px-8 space-y-12">
 
         {/* Search & Filter Bar */}
-        <div className="bg-[#05070f] border border-white/10 rounded-2xl p-6 shadow-2xl space-y-4">
+        <div className="bg-[#05070f] border border-white/10 rounded-2xl p-6  space-y-4">
           <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
             
             <div className="relative">
@@ -111,8 +127,9 @@ export const ProductsView: React.FC<ProductsViewProps> = ({
               <div
                 key={prod.id}
                 onClick={() => setActiveProduct(prod)}
-                className="bg-[#05070f] border border-white/10 rounded-2xl overflow-hidden shadow-xl hover:border-[#0199F7] hover:shadow-2xl transition-all cursor-pointer flex flex-col justify-between group"
+                className="bg-[#05070f] border border-white/10 rounded-2xl overflow-hidden  hover:border-[#0199F7] hover: transition-all cursor-pointer flex flex-col justify-between group"
               >
+                <MacWindowHeader title={prod.categoryLabel} />
                 <div className="relative h-52 bg-black overflow-hidden">
                   <img src={prod.image} alt={prod.name} className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" referrerPolicy="no-referrer" />
                   <div className="absolute top-3 left-3">
@@ -137,7 +154,7 @@ export const ProductsView: React.FC<ProductsViewProps> = ({
                         className={`px-3.5 py-2 text-xs font-bold rounded-lg transition-colors flex items-center gap-1.5 cursor-pointer ${
                           inBasket
                             ? 'bg-emerald-950 text-emerald-300 border border-emerald-800'
-                            : 'bg-[#0199F7] hover:bg-blue-600 text-white shadow-md shadow-[#0199F7]/30'
+                            : 'bg-[#0199F7] hover:bg-blue-600 text-white /30'
                         }`}
                       >
                         <ShoppingBag className="w-3.5 h-3.5" />
@@ -157,7 +174,7 @@ export const ProductsView: React.FC<ProductsViewProps> = ({
       {activeProduct && (
         <div className="fixed inset-0 z-50 flex items-center justify-center p-4 bg-black/85 backdrop-blur-sm animate-fadeIn">
           <div 
-            className="w-full max-w-3xl max-h-[90vh] overflow-y-auto bg-[#05070f] border border-white/15 rounded-2xl p-6 sm:p-8 shadow-2xl space-y-6 text-left relative text-slate-300"
+            className="w-full max-w-3xl max-h-[90vh] overflow-y-auto bg-[#05070f] border border-white/15 rounded-2xl p-6 sm:p-8  space-y-6 text-left relative text-slate-300"
             onClick={(e) => e.stopPropagation()}
           >
             <button
@@ -186,7 +203,7 @@ export const ProductsView: React.FC<ProductsViewProps> = ({
                     addToBasket(activeProduct);
                     setActiveProduct(null);
                   }}
-                  className="w-full py-3.5 text-xs font-bold text-white bg-[#0199F7] hover:bg-blue-600 rounded-lg shadow-lg shadow-[#0199F7]/30 flex items-center justify-center gap-2 cursor-pointer"
+                  className="w-full py-3.5 text-xs font-bold text-white bg-[#0199F7] hover:bg-blue-600 rounded-lg /30 flex items-center justify-center gap-2 cursor-pointer"
                 >
                   <ShoppingBag className="w-4 h-4" />
                   <span>Add to Enquiry Basket</span>
